@@ -1,0 +1,21 @@
+<html>
+<body>123456ty7u8iop[]
+#set(HashMap hm=obj)
+#set(Object obj1=fff)
+#set(Object o2=obj2)
+${hm.get('obj2')}
+<!--##${j.obj2}-->
+	${obj}
+	${obj1}
+	${o2}
+
+<!--<form action="${base}/upload" method="post" enctype="multipart/form-data">-->
+<form action="${base}/user/val" method="post" >
+	<input type="file" name="photo" value=""/>
+	<input type="text" name="id" value="1"/>
+	验证码<input name="u_cap" type="text" value="">
+	<img id="captcha_img" src="${base}/user/cap" onclick="this.src=this.src+'?'"/>
+	<input type="submit" value="上传"/>
+</form>
+</body>
+</html>
